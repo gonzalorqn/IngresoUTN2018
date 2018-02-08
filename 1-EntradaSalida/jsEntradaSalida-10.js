@@ -7,10 +7,10 @@ function MostrarDescuento()
     var importe;
     var resultado;
 
-    importe = parseInt (document.getElementById("importe").value);
+    importe = parseFloat (document.getElementById("importe").value);
 
-    resultado = importe - (importe * 25 / 100);
+    resultado = importe * 0.75;
 
-    document.getElementById("resultado").value = resultado;
+    document.getElementById("resultado").value = resultado.toFixed(2);
     
 }
