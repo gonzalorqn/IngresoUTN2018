@@ -8,6 +8,6 @@ function Mostrar()
 		num = parseInt(prompt("Número inválido. Ingrese un número entre 0 y 9."));
 	}
 
-	document.getElementById("Numero").value = num
+	document.getElementById("Numero").value = num;
 
 }//FIN DE LA FUNCIÓN
