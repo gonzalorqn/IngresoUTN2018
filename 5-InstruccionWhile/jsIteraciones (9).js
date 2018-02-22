@@ -21,10 +21,10 @@ function Mostrar()
 			flag = 1
 		}
 		
-		respuesta = prompt("Quiere seguir sumando?");
+		respuesta = prompt("Desea continuar?");
 		respuesta = respuesta.toLowerCase();
 	
-	}while(respuesta!='no')
+	}while(respuesta!='no');
 
 document.getElementById("maximo").value=maximo;
 document.getElementById("minimo").value=minimo;
