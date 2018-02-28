@@ -1,21 +1,19 @@
 function Mostrar()
 {
 var cantPares=0;
+var pedir = parseInt(prompt("Ingrese un número."));
 
-for(var pedir = parseInt(prompt("Ingrese un número.")); pedir > 1 ; pedir -= 2)
+for(var i=1; i <= pedir ; i++)
 {
-    if(pedir % 2 == 0)
+    if(i % 2 == 0)
     {
-        console.log(pedir);
+        console.log(i);
         cantPares++;
     }
-    else
-    {
-        pedir++;
-    }
+
 }
 
-alert("La cantidad de pares es: " + cantPares);
+console.log("La cantidad de pares es " + cantPares);
 
 
 

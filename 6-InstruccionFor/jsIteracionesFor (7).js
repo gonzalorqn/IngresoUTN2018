@@ -1,21 +1,19 @@
 function Mostrar()
 {
 var cantDivisores=0;
-var pedir = parseInt(prompt("Ingrese un número."))
-for(i=0 ; pedir >= i ; i++)
+var numero = parseInt(prompt("Ingrese un número."));
+
+for(var i=1 ; i <= numero ; i++)
 {
-    if(pedir % 2 == 0)
+    if(numero % i == 0)
     {
-        console.log(pedir);
+        console.log(i);
         cantDivisores++;
     }
-    else
-    {
-        pedir++;
-    }
+    
 }
 
-alert("La cantidad de pares es: " + cantDivisores);
+console.log("La cantidad de divisores es " + cantDivisores);
 
 
 
